@@ -1,0 +1,125 @@
+body {
+    background-image: url('https://preview.redd.it/reminder-that-skincare-can-look-like-shelfie-v0-x3snv7de12tb1.jpg?width=640&crop=smart&auto=webp&s=73f75fc2d667e69d6433e4244f0901059720946a');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+
+table {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 8px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #bef5a6;
+    color: #353232;
+}
+
+.add-product-link {
+    background-color: #bef5a6;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.add-product-link:hover {
+    background-color: #bef5a6;
+}
+
+.add-product-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-product-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #bef5a6;
+    color: #353232;
+    border-radius: 5px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    max-width: 300px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h2 {
+    color: #3498db;
+}
+
+.product-info p {
+    color: #777;
+}
+
+.update-link,
+.delete-link {
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-link {
+    background-color: #f1bde6;
+}   
+
+.delete-link {
+    background-color: #f1bde6;
+}
+

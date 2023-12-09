@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Skincare Product</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-image: url('https://i0.wp.com/s3.ca-central-1.amazonaws.com/withmable.com/2021/01/IMG_8948-768x1024.jpg?resize=768%2C1024');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #bef5a6;
+            color: #353232;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #bef5a6;
+        }
+
+        .home-button {
+        display: inline-block;
+        margin-left: 10px; 
+        padding: 10px 15px;
+        background-color: #bef5a6;
+        color: #353232;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 16px;
+        }
+
+        .home-button:hover {
+            background-color: #bef5a6;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Add Skincare Product</h1>
+    </header>
+
+    <form action="{{ url_for('add_product') }}" method="post">
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="description">Product Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <div class="button-container">
+            <button type="submit">Add Product</button>
+            <a href="{{ url_for('index') }}" class="home-button">Back to Homepage</a>
+        </div>
+    </form>
+
+</body>
+
+</html>
