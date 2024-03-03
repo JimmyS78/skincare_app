@@ -1,0 +1,7 @@
+Jimmy took the lead in setting up the initial project structure, including creating the Flask application (app.py), initializing the database (init_db.py),
+and defining the Docker configuration (Dockerfile).
+Meanwhile, Jihen focused on developing the frontend aspects, such as designing and implementing the HTML templates (templates directory) 
+and styling the website with CSS and other static assets (static directory).
+Both members actively participated in writing tests (test_app.py, test_e2e.py, test_integration.py) to ensure the application's functionality and reliability. 
+
+  We worked together but decided to just upload the project at the end in github when we ensured that every thing is done. So one member has submitted the work. 
